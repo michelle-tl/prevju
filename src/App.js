@@ -57,7 +57,7 @@ const Nav = () => (
   <div className="App-header">
     <IndexLink activeClassName='active' className="prevju-logo" to='/'></IndexLink>&nbsp;
     <div className="menu">
-    <IndexLink activeClassName='active' to='/interviewstep1'>titel1</IndexLink>&nbsp;
+    <IndexLink activeClassName='active' to='/interviewstep1'>Preview preVju</IndexLink>&nbsp;
     {/* <IndexLink activeClassName='active' to='/in'>titel2</IndexLink>&nbsp; */}
     {/* <IndexLink activeClassName='active' to='/namedComponent'>Named Components</IndexLink>&nbsp;
     <IndexLink activeClassName='active' to={{ pathname: '/address/query', query: { message: 'Hello from Route Query' } }}>Route Query</IndexLink> */}

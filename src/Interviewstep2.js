@@ -86,6 +86,17 @@ class Interviewstep2 extends Component {
     }
   }
 
+  getTitle(){
+    if(this.state.questionNumber == 1){
+      return <h1>Question 1</h1>
+    } else if(this.state.questionNumber == 2) {
+      return <h1>Question 2</h1>
+    } else if(this.state.questionNumber == 3){
+      return <h1>Question 3</h1>
+    }
+
+  }
+
   render() {
     return (
 
@@ -97,7 +108,7 @@ class Interviewstep2 extends Component {
 
         <div className="row">
           <div className="col">
-          <h1>Question 1</h1>
+          {this.getTitle()}
           </div>
 
           <div className="row center">
