@@ -5,6 +5,7 @@ import './App.css';
 import FirebaseHelper from './FirebaseHelper'
 import Interviewstep1 from './Interviewstep1.js'
 import Interviewstep2 from './Interviewstep2.js'
+import CreateFormView from './CreateFormView.js'
 
 class App extends Component {
   render () {
@@ -18,6 +19,7 @@ class App extends Component {
             <Route path='query' component={Query} />
           </Route>
           <Route path='/interviewstep2' component={Interviewstep2} />
+          <Route path='/createformview' component={CreateFormView} />
           <Route path='/namedComponent' component={NamedComponents}>
             <IndexRoute components={{ title: Title, subTitle: SubTitle }} />
           </Route>

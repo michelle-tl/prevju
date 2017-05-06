@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router'
 
 class Landing extends Component {
   render() {
@@ -25,7 +26,8 @@ class Landing extends Component {
         <div className="intro-text">
             <div className="intro-lead-in">Searching for potential employees?</div>
             <div className="intro-heading">Look no further!</div>
-            <a href="#services" className="page-scroll btn btn-xl">Tell Me More</a>
+            <Link to='/createformview' className="page-scroll btn btn-xl">Tell Me More </Link>
+            
         </div>
     </div>
     </header>
