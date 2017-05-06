@@ -16,7 +16,7 @@ import Company5 from './Company5.js'
 class App extends Component {
   render () {
     return (
-      <Router history={hashHistory}>
+      <Router history={browserHistory}>
         <Route path='/' component={Container}>
           <IndexRoute component={Landing} />
           <Route path='/interviewstep1' component={Interviewstep1}>
