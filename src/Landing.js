@@ -68,15 +68,17 @@ class Landing extends Component {
                  <div className="row">
                      <div className="col-lg-12 text-center">
                          <h2 className="section-heading">How it works</h2>
-                         <h3 className="section-subheading text-muted">Three steps, that's all you need to do.</h3>
+                         <h3 className="section-subheading text-muted">Three steps, thats all you need to do.</h3>
                      </div>
                  </div>
                  <div className="row">
                      <div className="col-lg-12">
                          <ul className="timeline">
                              <li>
-                                 <div className="timeline-image">
-                                     {/* <img className="img-circle img-responsive" src="img/about/1.jpg" alt=""> */}
+                                 <div className="timeline-image circleone">
+                                 {
+                                   <div className="pic1"></div>
+                                 }
                                  </div>
                                  <div className="timeline-panel">
                                      <div className="timeline-heading">
@@ -88,7 +90,7 @@ class Landing extends Component {
                                  </div>
                              </li>
                              <li className="timeline-inverted">
-                                 <div className="timeline-image">
+                                 <div className="timeline-image circletwo">
                                      {/* <img className="img-circle img-responsive" src="img/about/2.jpg" alt=""> */}
                                  </div>
                                  <div className="timeline-panel">
@@ -96,20 +98,20 @@ class Landing extends Component {
                                          <h4 className="subheading">2. Wait</h4>
                                      </div>
                                      <div className="timeline-body">
-                                         <p className="text-muted">Potential candidates dial in to preVju and record their answers.</p>
+                                         <p className="text-muted">Potential candidates dial in to preVju to have their interview with our interview robot. We record the answers.</p>
                                      </div>
                                  </div>
                              </li>
                              <li>
-                                 <div className="timeline-image">
+                                 <div className="timeline-image circlethree">
                                      {/* <img className="img-circle img-responsive" src="img/about/3.jpg" alt=""> */}
                                  </div>
                                  <div className="timeline-panel">
                                      <div className="timeline-heading">
-                                         <h4 className="subheading">3. Get your all-stars</h4>
+                                         <h4 className="subheading">3. Hire!</h4>
                                      </div>
                                      <div className="timeline-body">
-                                         <p className="text-muted">We analyse the answers and help you identify the best candidates.</p>
+                                         <p className="text-muted">We convert the answers  to text, and use text analysis to and help you identify and hire the best candidates!</p>
                                      </div>
                                  </div>
                              </li>

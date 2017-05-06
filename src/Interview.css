@@ -23,6 +23,15 @@ h2{
   opacity: 0.8;
 }
 
+.orange{
+  background-color: #FF7C5E;
+  border-color: #e8836c;
+}
+
+.orange:hover{
+  background-color: #d76146;
+  border-color: #d76146;
+}
 .Interview h2 {
   color: #434343;
 }

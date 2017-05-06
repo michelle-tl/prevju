@@ -3,6 +3,31 @@
 
 }
 
+.pic1 {
+  /* <img className="img-circle img-responsive" src="img/about/1.jpg" alt=""> */
+}
+
+.circleone {
+  background-image: url("../img/about/circle-1.png");
+  background-size: 160px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.circletwo {
+  background-image: url("../img/about/circle-2.png");
+  background-size: 160px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.circlethree {
+  background-image: url("../img/about/circle-3.png");
+  background-size: 160px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 h2, p{
   color: #2c3e50 !important;
 }
