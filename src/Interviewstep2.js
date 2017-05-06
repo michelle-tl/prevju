@@ -8,6 +8,7 @@ class Interviewstep2 extends Component {
   constructor(props){
     super(props);
     this.state = {
+      loaded: false,
       clicked: false,
       questionNumber: 1
     }
@@ -23,25 +24,31 @@ class Interviewstep2 extends Component {
 
     script.src = "https://code.responsivevoice.org/responsivevoice.js";
     script.async = true;
+    setTimeout(function() {
+      this.setState({loaded: true})
+      this.question1();
+    }.bind(this), 5000);
     document.body.appendChild(script);
+
   }
 
   componentDidMount(){
-    this.question1();
+
   }
 
   getQuestion(){
-    if(this.state.questionNumber == 1){
-      return <p>{StandardQuestions.Question1()}</p>
-    } else if(this.state.questionNumber == 2) {
-      return <p>{StandardQuestions.Question2()}</p>
-    } else if(this.state.questionNumber == 3){
-      return <p>{StandardQuestions.Question3()}</p>
+    if(this.state.loaded){
+      if(this.state.questionNumber == 1){
+        return <p>{StandardQuestions.Question1()}</p>
+      } else if(this.state.questionNumber == 2) {
+        return <p>{StandardQuestions.Question2()}</p>
+      } else if(this.state.questionNumber == 3){
+        return <p>{StandardQuestions.Question3()}</p>
+      }
     }
   }
 
   toggleQuestion(){
-    console.log("here")
     var number;
     if(this.state.questionNumber == 1){
       number = 2;
@@ -56,11 +63,14 @@ class Interviewstep2 extends Component {
       questionNumber: number
     })
   }
+
   getMicButton(){
-    if(this.state.clicked){
-      return <a onClick = {this.onClickMic} className="row mic-active interview-container"></a>
-    } else {
-      return <a onClick = {this.onClickMic} className="row mic interview-container"></a>
+    if(this.state.loaded){
+      if(this.state.clicked){
+        return <a onClick = {this.onClickMic} className="row mic-active interview-container"></a>
+      } else {
+        return <a onClick = {this.onClickMic} className="row mic interview-container"></a>
+      }
     }
   }
 
@@ -79,20 +89,26 @@ class Interviewstep2 extends Component {
   }
 
   getButton(){
-    if(this.state.questionNumber == 3){
-      return <Link to='/interviewstep3' className="page-scroll btn btn-xl">Submit</Link>
-    } else {
-      return <a onClick = {this.toggleQuestion} className="page-scroll btn btn-xl">Next Question</a>
+    if(this.state.loaded){
+      if(this.state.questionNumber == 3){
+        return <Link to='/interviewstep3' className="page-scroll btn btn-xl">Submit</Link>
+      } else {
+        return <a onClick = {this.toggleQuestion} className="page-scroll btn btn-xl">Next Question</a>
+      }
     }
   }
 
   getTitle(){
-    if(this.state.questionNumber == 1){
-      return <h1>Question 1</h1>
-    } else if(this.state.questionNumber == 2) {
-      return <h1>Question 2</h1>
-    } else if(this.state.questionNumber == 3){
-      return <h1>Question 3</h1>
+    if(this.state.loaded){
+      if(this.state.questionNumber == 1){
+        return <h1>Question 1</h1>
+      } else if(this.state.questionNumber == 2) {
+        return <h1>Question 2</h1>
+      } else if(this.state.questionNumber == 3){
+        return <h1>Question 3</h1>
+      }
+    } else {
+      return <h1>Please wait</h1>
     }
 
   }
