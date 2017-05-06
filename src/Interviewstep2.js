@@ -8,7 +8,7 @@ class Interviewstep2 extends Component {
   constructor(props){
     super(props);
     this.state = {
-      clicked: true
+      clicked: false
     }
     this.question1 = this.question1.bind(this)
     this.question2 = this.question2.bind(this)
@@ -32,18 +32,21 @@ class Interviewstep2 extends Component {
     if(this.state.clicked){
       return <a onClick = {this.onClickMic} className="row mic-active interview-container"></a>
     } else {
-      return <div className="row mic interview-container"></div>
+      return <a onClick = {this.onClickMic} className="row mic interview-container"></a>
     }
   }
 
   onClickMic(){
-    var clicked = true;
-    if(this.props.clicked){
-      clicked = false;
+    if(this.state.clicked){
+      this.setState({
+        clicked: false
+      })
+    } else {
+      this.setState({
+        clicked: true
+      })
     }
-    this.setState({
-      clicked: clicked
-    })
+
     console.log(this.state.clicked)
   }
 
