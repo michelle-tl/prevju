@@ -4,7 +4,7 @@ import './Interview.css';
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router'
 import StandardQuestions from './StandardQuestions.js'
 
-class InterviewEnd extends Component {
+class Interviewstep3 extends Component {
   constructor(props){
     super(props);
   }
@@ -13,7 +13,6 @@ class InterviewEnd extends Component {
     return (
 
       <div className="App">
-
 
         <div className="interview-container">
         <div className="container">
@@ -32,7 +31,7 @@ class InterviewEnd extends Component {
 
           </div>
           <div className="col">
-          <Link to='./interviewstep1' className="page-scroll btn btn-xl">Back to the frontpage</Link>
+          <Link to='/' className="page-scroll btn btn-xl">Back to the frontpage</Link>
           </div>
         </div>
 
@@ -42,9 +41,9 @@ class InterviewEnd extends Component {
       </div>
       </div>
 
+
     );
   }
-
 }
 
-export default InterviewEnd;
+export default Interviewstep3;
