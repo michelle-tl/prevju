@@ -1,0 +1,42 @@
+h2{
+  color: #2c3e50;
+}
+
+.interview-alternatives{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*width: 50%;*/
+  margin-top: 6%;
+  font-size: 34px;
+
+}
+
+.prevju{
+  background-image: url("../img/logo-trans.png");
+  background-size: 100%;
+  width: 25%;
+  background-repeat: no-repeat;
+}
+
+.skype{
+  background-image: url("../img/skype.jpg");
+  background-size: 100%;
+  width: 58px;
+  background-repeat: no-repeat;
+}
+
+.phone-center{
+  padding: 2%;
+}
+.interview-container{
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interview-container > p {
+
+}

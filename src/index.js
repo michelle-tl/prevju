@@ -5,6 +5,6 @@ import './index.css';
 import StorageTest from './StorageTest'
 
 ReactDOM.render(
-  <StorageTest />,
+  <App />,
   document.getElementById('root')
 );

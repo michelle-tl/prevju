@@ -6,6 +6,7 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-load-script": "0.0.3",
+    "react-router": "^2.8.1",
     "react-scripts": "0.9.5",
     "react-speech": "^0.3.2"
   },
