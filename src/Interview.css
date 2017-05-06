@@ -2,6 +2,20 @@ h2{
   color: #2c3e50;
 }
 
+.mrphone {
+  color: white;
+  left: -5%;
+}
+
+.Interview {
+  padding: 50px;
+  background: #252525;
+}
+
+.Interview h2 {
+  color: white;
+}
+
 .wanttohire{
   background-image: url("../img/wanttohire.png");
   margin: 0 auto;
