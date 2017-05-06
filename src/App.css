@@ -18,6 +18,13 @@ h2{
   width: 100%;
 }
 
+.prevju-logo{
+  background-image: url("../img/logo-trans.png");
+  background-size: 100%;
+  width: 100px;
+  height: 31px;
+}
+
 .App-header > a{
   color: #2c3e50;
   text-decoration: none;
@@ -32,7 +39,7 @@ h2{
 }
 
 .menu > a{
-  color: #2c3e50;
+  color: #ffffff;
   text-decoration: none;
 }
 

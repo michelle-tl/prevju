@@ -49,7 +49,7 @@ const NamedComponents = (props) => (
 
 const Nav = () => (
   <div className="App-header">
-    <IndexLink activeClassName='active' to='/'>prevju</IndexLink>&nbsp;
+    <IndexLink activeClassName='active' className="prevju-logo" to='/'></IndexLink>&nbsp;
     <div className="menu">
     <IndexLink activeClassName='active' to='/interviewstep1'>titel1</IndexLink>&nbsp;
     {/* <IndexLink activeClassName='active' to='/in'>titel2</IndexLink>&nbsp; */}

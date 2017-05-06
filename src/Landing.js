@@ -40,7 +40,7 @@ class Landing extends Component {
         <span >Hire all-stars</span>
       </div>
     </div>
-    <div className="center" style={{backgroundColor: '#f7f7f7', marginTop:0}} >
+    <div className="center" style={{backgroundColor: '#f7f7f7', marginTop:0, marginBottom: 0}} >
       {/* <div className="circle-container">
         <span className="circle" id="cost-white"></span>
         <span className="circle" id="icon-time-white"></span>
