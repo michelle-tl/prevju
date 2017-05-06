@@ -1,0 +1,38 @@
+.center{
+  text-align: center;
+margin-top: 7%;
+margin-bottom: 7%;
+}
+
+.circle-container{
+  width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2%;
+    font-size: 18px;
+}
+
+#human-white{
+  background-image: url("../img/human-white.png");
+}
+
+#cost-white{
+  background-image: url("../img/cost-white.png");
+}
+
+#icon-time-white{
+  background-image: url("../img/icon-time-white.png");
+}
+
+
+.circle {
+	width: 100px;
+	height: 100px;
+	/*background: red;*/
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  background-size: 100%;
+}
