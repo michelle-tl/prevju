@@ -40,3 +40,21 @@ h2{
 .interview-container > p {
 
 }
+
+.col {
+  margin: 50px auto 50px auto;
+}
+
+.textmic {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mic {
+    background-image: url(http://www.freeiconspng.com/uploads/audio-record-icon-1.png);
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+
+}

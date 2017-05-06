@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 module.exports.Question1 = function(){
-  return "Hello, we are happy you wanna work for us. Could you please tell us more about yourself?"
+  return "Hello, we are happy you wanna work for us. \n Could you please tell us more about yourself?"
 }
 
 module.exports.Question2 = function(){
