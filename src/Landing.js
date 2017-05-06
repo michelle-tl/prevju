@@ -68,15 +68,17 @@ class Landing extends Component {
                  <div className="row">
                      <div className="col-lg-12 text-center">
                          <h2 className="section-heading">How it works</h2>
-                         <h3 className="section-subheading text-muted">Three steps, that's all you need to do.</h3>
+                         <h3 className="section-subheading text-muted">Three steps, thats all you need to do.</h3>
                      </div>
                  </div>
                  <div className="row">
                      <div className="col-lg-12">
                          <ul className="timeline">
                              <li>
-                                 <div className="timeline-image">
-                                     {/* <img className="img-circle img-responsive" src="img/about/1.jpg" alt=""> */}
+                                 <div className="timeline-image circleone">
+                                 {
+                                   <div className="pic1"></div>
+                                 }
                                  </div>
                                  <div className="timeline-panel">
                                      <div className="timeline-heading">
@@ -88,7 +90,7 @@ class Landing extends Component {
                                  </div>
                              </li>
                              <li className="timeline-inverted">
-                                 <div className="timeline-image">
+                                 <div className="timeline-image circletwo">
                                      {/* <img className="img-circle img-responsive" src="img/about/2.jpg" alt=""> */}
                                  </div>
                                  <div className="timeline-panel">
@@ -101,7 +103,7 @@ class Landing extends Component {
                                  </div>
                              </li>
                              <li>
-                                 <div className="timeline-image">
+                                 <div className="timeline-image circlethree">
                                      {/* <img className="img-circle img-responsive" src="img/about/3.jpg" alt=""> */}
                                  </div>
                                  <div className="timeline-panel">
