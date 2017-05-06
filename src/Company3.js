@@ -4,7 +4,7 @@ import './Interview.css';
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router'
 
 
-class CreateFormView extends Component {
+class Company3 extends Component {
   constructor(){
     super();
   }
@@ -12,13 +12,12 @@ class CreateFormView extends Component {
     return (
       <div className="App" style={{width: '100%', height: '100vh'}}>
 
-            <Link to='/createformview2'><div className="wanttohire"></div></Link>
-            {/* <div className="createform"></div> */}
-
+            {/* <Link to='/createformview' className="page-scroll btn btn-xl"><div className="wanttohire"></div></Link> */}
+            <Link to='/createformview4'><div className="createform" id="company3"></div></Link>
 
       </div>
     );
   }
 }
 
-export default CreateFormView;
+export default Company3;

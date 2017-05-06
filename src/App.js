@@ -6,8 +6,11 @@ import FirebaseHelper from './FirebaseHelper'
 import Interviewstep1 from './Interviewstep1.js'
 import Interviewstep2 from './Interviewstep2.js'
 import Interviewstep3 from './InterviewEnd.js'
-
+import Companychoosequestions from './Companychoosequestions.js'
 import CreateFormView from './CreateFormView.js'
+import Company3 from './Company3.js'
+import Company4 from './Company4.js'
+import Company5 from './Company5.js'
 
 
 class App extends Component {
@@ -24,8 +27,11 @@ class App extends Component {
           <Route path='/interviewstep2' component={Interviewstep2} />
           <Route path='/interviewstep3' component={Interviewstep3}/>
           <Route path='/createformview' component={CreateFormView} />
-          <Route path='/namedComponent' component={NamedComponents}>
-          </Route>
+          <Route path='/createformview2' component={Companychoosequestions} />
+          <Route path='/createformview3' component={Company3} />
+          <Route path='/createformview4' component={Company4} />
+          <Route path='/createformview5' component={Company5} />
+
           <Route path='*' component={NotFound} />
         </Route>
 
