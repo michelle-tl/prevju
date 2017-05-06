@@ -98,7 +98,7 @@ class Landing extends Component {
                                          <h4 className="subheading">2. Wait</h4>
                                      </div>
                                      <div className="timeline-body">
-                                         <p className="text-muted">Potential candidates dial in to preVju and record their answers.</p>
+                                         <p className="text-muted">Potential candidates dial in to preVju to have their interview with our interview robot. We record the answers.</p>
                                      </div>
                                  </div>
                              </li>
@@ -108,10 +108,10 @@ class Landing extends Component {
                                  </div>
                                  <div className="timeline-panel">
                                      <div className="timeline-heading">
-                                         <h4 className="subheading">3. Get your all-stars</h4>
+                                         <h4 className="subheading">3. Hire!</h4>
                                      </div>
                                      <div className="timeline-body">
-                                         <p className="text-muted">We analyse the answers and help you identify the best candidates.</p>
+                                         <p className="text-muted">We convert the answers  to text, and use text analysis to and help you identify and hire the best candidates!</p>
                                      </div>
                                  </div>
                              </li>

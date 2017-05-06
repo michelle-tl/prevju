@@ -21,9 +21,8 @@ class Interviewstep3 extends Component {
           <div className="col">
           <h1>Thanks for your interview!</h1>
           </div>
-          <div className="col textmic">
-
-
+          <div>
+          <img src={'../img/checked.png'} style={{margin: '0 auto'}} className="img-responsive"/>
           <div class="">
             <p>You're interview will be analyzed and sent to the company. Your analyzed interview will appear on your pages shortly.</p>
           </div>
@@ -31,7 +30,7 @@ class Interviewstep3 extends Component {
 
           </div>
           <div className="col">
-          <Link to='/' className="page-scroll btn btn-xl">Back to the frontpage</Link>
+          <Link to='/' className="orange page-scroll btn btn-xl">Back to the frontpage</Link>
           </div>
         </div>
 
