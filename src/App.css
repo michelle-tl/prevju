@@ -25,6 +25,23 @@
   font-size: large;
 }
 
+.banner {
+  background-size: cover;
+  background-position: center;  height: 100vh;
+  background-size: cover;
+  /* content:url(https://files.slack.com/files-pri/T59AURYQ6-F593HFJDP/black-and-white-city-man-people.jpg); */
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://files.slack.com/files-pri/T59AURYQ6-F593HFJDP/black-and-white-city-man-people.jpg);
+  background-attachment: fixed;
+}
+
+.logo {
+  content:url(/img/logo.png);
+}
+
+h2 {
+  color: white;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
