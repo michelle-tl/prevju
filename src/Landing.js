@@ -28,7 +28,7 @@ class Landing extends Component {
         <div className="intro-text">
 
             <div className="intro-lead-in">Looking to hire?</div>
-            <div className="intro-heading">Interviewing made easier, cheaper and faster!/div>
+            <div className="intro-heading">Interviewing made easier, cheaper and faster! </div>
             <Link to='/createformview' className="page-scroll btn btn-xl">Tell Me More </Link>
 
 
