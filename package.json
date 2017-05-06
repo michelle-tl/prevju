@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "firebase": "^3.9.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-router": "^2.0.1",
-    "react-scripts": "0.9.5"
+    "react-load-script": "0.0.3",
+    "react-router": "^2.8.1",
+    "react-scripts": "0.9.5",
+    "react-speech": "^0.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
