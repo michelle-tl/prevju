@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router'
+
 import './Landing.css';
+
+
 
 class Landing extends Component {
   render() {
@@ -21,9 +26,12 @@ class Landing extends Component {
     <header>
     <div className="container">
         <div className="intro-text">
-            <div className="intro-heading">Want to hire?</div>
-            <div className="intro-lead-in">Interviewing made easier, cheaper, and faster!</div>
-            <a href="#services" className="page-scroll btn btn-xl">Get To Business</a>
+
+            <div className="intro-lead-in">Searching for potential employees?</div>
+            <div className="intro-heading">Look no further!</div>
+            <Link to='/createformview' className="page-scroll btn btn-xl">Tell Me More </Link>
+
+
         </div>
     </div>
     </header>

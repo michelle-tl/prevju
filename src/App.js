@@ -7,6 +7,9 @@ import Interviewstep1 from './Interviewstep1.js'
 import Interviewstep2 from './Interviewstep2.js'
 import Interviewstep3 from './InterviewEnd.js'
 
+import CreateFormView from './CreateFormView.js'
+
+
 class App extends Component {
   render () {
     return (
@@ -20,6 +23,9 @@ class App extends Component {
           </Route>
           <Route path='/interviewstep2' component={Interviewstep2} />
           <Route path='/interviewstep3' component={Interviewstep3}/>
+          <Route path='/createformview' component={CreateFormView} />
+          <Route path='/namedComponent' component={NamedComponents}>
+          </Route>
           <Route path='*' component={NotFound} />
         </Route>
 
