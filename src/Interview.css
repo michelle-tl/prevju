@@ -3,20 +3,28 @@ h2{
 }
 
 .mrphone {
-  color: white;
+  color: #2c3e50;
   left: -5%;
+}
+
+.intro-heading {
+  color: #f7f7f7;
+}
+
+.intro-text {
+  color: #f7f7f7;
 }
 
 .Interview {
   padding: 50px;
-  background: #676767;
+  background: #f7f7f7;
   border-radius: 25px;
-  box-shadow: 0px 7px 10px #a7a7a7;
+  box-shadow: 0px 7px 10px #eaeaea;
   opacity: 0.8;
 }
 
 .Interview h2 {
-  color: white;
+  color: #434343;
 }
 
 .wanttohire{
@@ -69,7 +77,7 @@ h2{
   padding: 2%;
 }
 .interview-container{
-  height: 90vh;
+  height: 95vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -82,15 +90,15 @@ h2{
 
 .container {
   padding: 50px;
-  background: #676767;
+  background: #f7f7f7;
   border-radius: 25px;
-  box-shadow: 0px 7px 10px #a7a7a7;
+  box-shadow: 0px 7px 10px #eaeaea;
   opacity: 0.8;
-
+  width: 80vh;
 }
 
 .col {
-  margin: 20px auto 20px auto;
+  margin: 50px auto 50px auto;
 }
 
 .textmic {
@@ -123,5 +131,5 @@ h2{
 }
 
 .container h1, p {
-  color: white;
+  color: #434343;
 }

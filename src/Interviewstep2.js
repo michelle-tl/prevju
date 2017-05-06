@@ -106,12 +106,12 @@ class Interviewstep2 extends Component {
         <div className="interview-container">
         <div className="container">
 
-        <div className="row">
-          <div className="col">
+        <div className="">
+          <div className="">
           {this.getTitle()}
           </div>
 
-          <div className="row center">
+          <div className="center">
             <div className="">
               {this.getQuestion()}
             </div>
@@ -120,7 +120,7 @@ class Interviewstep2 extends Component {
           </div>
 
           </div>
-          <div className="col">
+          <div className="">
           {this.getButton()}
           </div>
 
