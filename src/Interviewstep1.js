@@ -11,13 +11,13 @@ class Interviewstep1 extends Component {
   render() {
     return (
       <div className="App">
-        <div className="">
+        <div className="interview-container">
           <p className="Interview">
             <h2>Choose your interview channel:</h2>
               <div className="interview-alternatives">
               <span>Intervjusidan 1</span>
-              <span className="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-              <span className="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+              <span className="phone-center glyphicon glyphicon-earphone"  aria-hidden="true"></span>
+              <span className="skype" aria-hidden="true"></span>
 
             </div>
           </p>
