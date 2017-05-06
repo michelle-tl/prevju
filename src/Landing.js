@@ -21,9 +21,9 @@ class Landing extends Component {
     <header>
     <div className="container">
         <div className="intro-text">
-            <div className="intro-lead-in">Searching for potential employees?</div>
-            <div className="intro-heading">Look no further!</div>
-            <a href="#services" className="page-scroll btn btn-xl">Tell Me More</a>
+            <div className="intro-heading">Want to hire?</div>
+            <div className="intro-lead-in">Interviewing made easier, cheaper, and faster!</div>
+            <a href="#services" className="page-scroll btn btn-xl">Get To Business</a>
         </div>
     </div>
     </header>
