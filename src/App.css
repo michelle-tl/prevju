@@ -16,6 +16,15 @@ h2{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+.prevju-logo{
+  background-image: url("../img/logo-trans.png");
+  background-size: 100%;
+  width: 100px;
+  height: 31px;
 }
 
 .App-header > a{
@@ -32,7 +41,7 @@ h2{
 }
 
 .menu > a{
-  color: #2c3e50;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -316,7 +325,8 @@ header .intro-text .intro-lead-in {
   font-style: italic;
   font-size: 22px;
   line-height: 22px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+  padding-bottom: 35px;
 }
 header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -365,7 +375,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    /*padding: 150px 0;*/
   }
 }
 .service-heading {

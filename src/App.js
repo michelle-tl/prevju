@@ -5,7 +5,11 @@ import './App.css';
 import FirebaseHelper from './FirebaseHelper'
 import Interviewstep1 from './Interviewstep1.js'
 import Interviewstep2 from './Interviewstep2.js'
+
 import CreateFormView from './CreateFormView.js'
+
+import InterviewEnd from './InterviewEnd.js'
+
 
 class App extends Component {
   render () {
@@ -21,7 +25,7 @@ class App extends Component {
           <Route path='/interviewstep2' component={Interviewstep2} />
           <Route path='/createformview' component={CreateFormView} />
           <Route path='/namedComponent' component={NamedComponents}>
-            <IndexRoute components={{ title: Title, subTitle: SubTitle }} />
+          <Route path='/interviewend' component={InterviewEnd}/>
           </Route>
           <Route path='*' component={NotFound} />
         </Route>
@@ -52,7 +56,7 @@ const NamedComponents = (props) => (
 
 const Nav = () => (
   <div className="App-header">
-    <IndexLink activeClassName='active' to='/'>prevju</IndexLink>&nbsp;
+    <IndexLink activeClassName='active' className="prevju-logo" to='/'></IndexLink>&nbsp;
     <div className="menu">
     <IndexLink activeClassName='active' to='/interviewstep1'>titel1</IndexLink>&nbsp;
     {/* <IndexLink activeClassName='active' to='/in'>titel2</IndexLink>&nbsp; */}

@@ -29,7 +29,7 @@ h2{
   flex-direction: row;
   justify-content: space-between;
   /*width: 50%;*/
-  margin-top: 6%;
+  margin-top: 8%;
   font-size: 34px;
 
 }
@@ -78,5 +78,17 @@ h2{
     height: 50px;
     width: 50px;
     background-size: cover;
+    align-self: center;
+}
 
+.mic-active {
+  background-image: url('../img/mic-active.png');
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  align-self: center;
+}
+
+.center {
+  align-items: center;
 }

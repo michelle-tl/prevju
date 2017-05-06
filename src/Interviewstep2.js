@@ -7,9 +7,13 @@ import StandardQuestions from './StandardQuestions.js'
 class Interviewstep2 extends Component {
   constructor(props){
     super(props);
+    this.state = {
+      clicked: false
+    }
     this.question1 = this.question1.bind(this)
     this.question2 = this.question2.bind(this)
     this.question3 = this.question3.bind(this)
+    this.onClickMic = this.onClickMic.bind(this)
   }
 
   componentWillMount(){
@@ -22,6 +26,28 @@ class Interviewstep2 extends Component {
 
   componentDidMount(){
     this.question1();
+  }
+
+  getMicButton(){
+    if(this.state.clicked){
+      return <a onClick = {this.onClickMic} className="row mic-active interview-container"></a>
+    } else {
+      return <a onClick = {this.onClickMic} className="row mic interview-container"></a>
+    }
+  }
+
+  onClickMic(){
+    if(this.state.clicked){
+      this.setState({
+        clicked: false
+      })
+    } else {
+      this.setState({
+        clicked: true
+      })
+    }
+
+    console.log(this.state.clicked)
   }
 
   render() {
@@ -37,21 +63,24 @@ class Interviewstep2 extends Component {
           <div className="col">
           <h1>Question 1</h1>
           </div>
-          <div className="col textmic">
 
 
-          <div class="">
-            <p>{StandardQuestions.Question1()}</p>
+
+
+
+          <div className="row center">
+            <div className="">
+              <p>{StandardQuestions.Question1()}</p>
+            </div>
+
+            {this.getMicButton()}
           </div>
-
-          <div className="mic"></div>
-
 
           </div>
           <div className="col">
-          <a href="#services" className="page-scroll btn btn-xl">Submit Answer</a>
+          <a href="#services" className="page-scroll btn btn-xl">Next Question</a>
           </div>
-        </div>
+
 
 
       </div>
