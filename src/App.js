@@ -2,23 +2,27 @@ import React, { Component } from 'react'
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router'
 import Landing from './Landing.js';
 import './App.css';
+import Interviewstep1 from './Interviewstep1.js'
+import Interviewstep2 from './Interviewstep2.js'
+
 class App extends Component {
   render () {
     return (
       <Router history={hashHistory}>
         <Route path='/' component={Container}>
           <IndexRoute component={Landing} />
-          <Route path='/address' component={Address}>
+          <Route path='/interviewstep1' component={Interviewstep1}>
             <IndexRoute component={TwitterFeed} />
             <Route path='instagram' component={Instagram} />
             <Route path='query' component={Query} />
           </Route>
-          <Route path='/about(/:name)' component={About} />
+          <Route path='/interviewstep2' component={Interviewstep2} />
           <Route path='/namedComponent' component={NamedComponents}>
             <IndexRoute components={{ title: Title, subTitle: SubTitle }} />
           </Route>
           <Route path='*' component={NotFound} />
         </Route>
+
       </Router>
     )
   }
@@ -47,8 +51,8 @@ const Nav = () => (
   <div className="App-header">
     <IndexLink activeClassName='active' to='/'>prevju</IndexLink>&nbsp;
     <div className="menu">
-    <IndexLink activeClassName='active' to='/address'>titel1</IndexLink>&nbsp;
-    <IndexLink activeClassName='active' to='/about'>titel2</IndexLink>&nbsp;
+    <IndexLink activeClassName='active' to='/interviewstep1'>titel1</IndexLink>&nbsp;
+    {/* <IndexLink activeClassName='active' to='/in'>titel2</IndexLink>&nbsp; */}
     {/* <IndexLink activeClassName='active' to='/namedComponent'>Named Components</IndexLink>&nbsp;
     <IndexLink activeClassName='active' to={{ pathname: '/address/query', query: { message: 'Hello from Route Query' } }}>Route Query</IndexLink> */}
   </div>
@@ -60,15 +64,13 @@ const Container = (props) => <div>
   {props.children}
 </div>
 
-const Home = () => <h1>Hello from Home!</h1>
-
-const Address = (props) => <div>
-  <br />
-  <Link to='/address'>Twitter Feed</Link>&nbsp;
-  <Link to='/address/instagram'>Instagram Feed</Link>
-  <h1>We are located at 555 Jackson St.</h1>
-  {props.children}
-</div>
+// const Interviewstep2 = (props) => <div>
+//   <br />
+//   <Link to='/address'>Twitter Feed</Link>&nbsp;
+//   <Link to='/address/instagram'>Instagram Feed</Link>
+//   <h1>We are located at 555 Jackson St.</h1>
+//   {props.children}
+// </div>
 
 const Instagram = () => <h3>Instagram Feed</h3>
 const TwitterFeed = () => <h3>Twitter Feed</h3>

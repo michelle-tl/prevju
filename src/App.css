@@ -2,11 +2,14 @@
   text-align: center;
 }
 
+h2{
+  color: #2c3e50;
+}
+
 .App-header {
-  background-color: #222;
   height: 2em;
   padding: 20px;
-  color: white;
+  color: #2c3e50;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -14,7 +17,7 @@
 }
 
 .App-header > a{
-  color: white;
+  color: #2c3e50;
   text-decoration: none;
 }
 .menu{
@@ -27,7 +30,7 @@
 }
 
 .menu > a{
-  color: white;
+  color: #2c3e50;
   text-decoration: none;
 }
 
@@ -40,9 +43,10 @@
   background-position: center;  height: 100vh;
   background-size: cover;
   /* content:url(https://files.slack.com/files-pri/T59AURYQ6-F593HFJDP/black-and-white-city-man-people.jpg); */
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(https://files.slack.com/files-pri/T59AURYQ6-F593HFJDP/black-and-white-city-man-people.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../img/header-image.jpg");
   background-attachment: fixed;
 }
+
 
 .logo {
   content:url(/img/logo.png);
