@@ -78,8 +78,6 @@ class Interviewstep2 extends Component {
           <a href="#services" className="page-scroll btn btn-xl">Next Question</a>
           </div>
 
-
-
       </div>
 
       </div>
