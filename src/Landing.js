@@ -30,7 +30,7 @@ class Landing extends Component {
             <div className="intro-heading">Looking to hire?</div>
             <div className="intro-lead-in">Interviewing made easier, cheaper and faster!</div>
 
-            <Link to='/createformview' className="page-scroll btn btn-xl">Tell Me More </Link>
+            <Link to='/createformview' className="page-scroll btn btn-xl">Get to business</Link>
 
 
         </div>
@@ -43,7 +43,7 @@ class Landing extends Component {
         <span className="circle" id="icon-time-white"></span>
         <span className="circle" id="human-white"></span>
       </div>
-      <div className="circle-container">
+      <div className="circle-container" style={{padding:0}}>
         <span>Save cost</span>
         <span >Save time</span>
         <span >Hire all-stars</span>
@@ -82,7 +82,7 @@ class Landing extends Component {
                                          <h4 className="subheading">1. Get started</h4>
                                      </div>
                                      <div className="timeline-body">
-                                         <p className="text-muted">Create a preVju account and choose interview questions.</p>
+                                         <p className="text-muted">Create a preVju account, choose interview questions that you want your candidates to answers.</p>
                                      </div>
                                  </div>
                              </li>
@@ -108,7 +108,7 @@ class Landing extends Component {
                                          <h4 className="subheading">3. Get your all-stars</h4>
                                      </div>
                                      <div className="timeline-body">
-                                         <p className="text-muted">We analyse the answers and screen out the best.</p>
+                                         <p className="text-muted">We analyse the answers and help you identify the best candidates.</p>
                                      </div>
                                  </div>
                              </li>
