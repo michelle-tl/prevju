@@ -38,6 +38,7 @@ class Landing extends Component {
     </header>
     <div className="center" >
       <h2>Why prevju?</h2>
+      <p>Interviewing 2.0 - With the help of our digital interview platform  you can:</p>
       <div className="circle-container">
         <span className="circle" id="cost-white"></span>
         <span className="circle" id="icon-time-white"></span>
