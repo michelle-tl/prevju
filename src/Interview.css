@@ -9,7 +9,10 @@ h2{
 
 .Interview {
   padding: 50px;
-  background: #252525;
+  background: #676767;
+  border-radius: 25px;
+  box-shadow: 0px 7px 10px #a7a7a7;
+  opacity: 0.8;
 }
 
 .Interview h2 {
@@ -77,8 +80,17 @@ h2{
 
 }
 
+.container {
+  padding: 50px;
+  background: #676767;
+  border-radius: 25px;
+  box-shadow: 0px 7px 10px #a7a7a7;
+  opacity: 0.8;
+
+}
+
 .col {
-  margin: 50px auto 50px auto;
+  margin: 20px auto 20px auto;
 }
 
 .textmic {
@@ -93,6 +105,8 @@ h2{
     width: 50px;
     background-size: cover;
     align-self: center;
+    margin-top: 35px;
+
 }
 
 .mic-active {
@@ -101,8 +115,13 @@ h2{
   width: 50px;
   background-size: cover;
   align-self: center;
+  margin-top: 35px;
 }
 
 .center {
   align-items: center;
+}
+
+.container h1, p {
+  color: white;
 }

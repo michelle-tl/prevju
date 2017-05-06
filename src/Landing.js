@@ -24,7 +24,7 @@ class Landing extends Component {
 
       </div>
     <header>
-    <div className="container">
+    <div className="">
         <div className="intro-text">
 
             <div className="intro-heading">Looking to hire?</div>
@@ -63,7 +63,7 @@ class Landing extends Component {
       {/* <!-- About Section --> */}
 
          <section id="about">
-             <div className="container">
+             <div className="">
                  <div className="row">
                      <div className="col-lg-12 text-center">
                          <h2 className="section-heading">How it works</h2>
