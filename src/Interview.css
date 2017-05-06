@@ -2,6 +2,23 @@ h2{
   color: #2c3e50;
 }
 
+.mrphone {
+  color: white;
+  left: -5%;
+}
+
+.Interview {
+  padding: 50px;
+  background: #676767;
+  border-radius: 25px;
+  box-shadow: 0px 7px 10px #a7a7a7;
+  opacity: 0.8;
+}
+
+.Interview h2 {
+  color: white;
+}
+
 .wanttohire{
   background-image: url("../img/wanttohire.png");
   margin: 0 auto;
@@ -55,7 +72,7 @@ h2{
 }
 
 .skype{
-  background-image: url("../img/skype.jpg");
+  background-image: url("../img/skype.png");
   background-size: 100%;
   width: 58px;
   background-repeat: no-repeat;
@@ -76,8 +93,17 @@ h2{
 
 }
 
+.container {
+  padding: 50px;
+  background: #676767;
+  border-radius: 25px;
+  box-shadow: 0px 7px 10px #a7a7a7;
+  opacity: 0.8;
+
+}
+
 .col {
-  margin: 50px auto 50px auto;
+  margin: 20px auto 20px auto;
 }
 
 .textmic {
@@ -92,6 +118,8 @@ h2{
     width: 50px;
     background-size: cover;
     align-self: center;
+    margin-top: 35px;
+
 }
 
 .mic-active {
@@ -100,8 +128,13 @@ h2{
   width: 50px;
   background-size: cover;
   align-self: center;
+  margin-top: 35px;
 }
 
 .center {
   align-items: center;
+}
+
+.container h1, p {
+  color: white;
 }
