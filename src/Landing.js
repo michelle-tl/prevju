@@ -5,7 +5,7 @@ import './App.css';
 class Landing extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App banner">
         {/* <div className="App-header">
           <p className="align-left">prevju</p>
           <div className="menu">
@@ -14,10 +14,10 @@ class Landing extends Component {
           <p >titel2</p>
         </div>
         </div> */}
-        <div className="">
+        <div className="banner">
           <p className="App-intro">
-            <h2>Welcome to Prevju</h2>
-          Landing page
+            <h2 className="hero-text">PreVju</h2>
+              <p className="hero-slogan">the smart way to interview</p>
           </p>
         </div>
       </div>

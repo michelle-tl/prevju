@@ -48,6 +48,15 @@
   content:url(/img/logo.png);
 }
 
+.hero-text {
+	position: absolute; /* We want to vertically & horizontally center content */
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%); /* Centers content half of width and height up to the top and left*/
+}
+
 h2 {
   color: white;
 }
