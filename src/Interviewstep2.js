@@ -78,6 +78,14 @@ class Interviewstep2 extends Component {
     console.log(this.state.clicked)
   }
 
+  getButton(){
+    if(this.state.questionNumber == 3){
+      return <Link to='/interviewstep3' className="page-scroll btn btn-xl">Submit</Link>
+    } else {
+      return <a onClick = {this.toggleQuestion} className="page-scroll btn btn-xl">Next Question</a>
+    }
+  }
+
   render() {
     return (
 
@@ -102,7 +110,7 @@ class Interviewstep2 extends Component {
 
           </div>
           <div className="col">
-          <a onClick = {this.toggleQuestion} className="page-scroll btn btn-xl">Next Question</a>
+          {this.getButton()}
           </div>
 
       </div>
