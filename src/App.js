@@ -3,6 +3,7 @@ import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRo
 import Landing from './Landing.js';
 import './App.css';
 import FirebaseHelper from './FirebaseHelper'
+import InterviewEnd from './InterviewEnd.js'
 import Interviewstep1 from './Interviewstep1.js'
 import Interviewstep2 from './Interviewstep2.js'
 
@@ -19,7 +20,7 @@ class App extends Component {
           </Route>
           <Route path='/interviewstep2' component={Interviewstep2} />
           <Route path='/namedComponent' component={NamedComponents}>
-            <IndexRoute components={{ title: Title, subTitle: SubTitle }} />
+          <Route path='/interviewEnd' component={InterviewEnd}/>
           </Route>
           <Route path='*' component={NotFound} />
         </Route>

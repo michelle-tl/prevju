@@ -16,7 +16,7 @@ class Interviewstep1 extends Component {
             <h2>Choose your interview channel:</h2>
               <div className="interview-alternatives">
               {/* <span>Intervjusidan 1</span> */}
-              <Link to='/interviewstep2' className="prevju"></Link>
+              <Link to='/interviewEnd' className="prevju"></Link>
               <span className="phone-center glyphicon glyphicon-earphone"  aria-hidden="true"></span>
               <span className="skype" aria-hidden="true"></span>
 
