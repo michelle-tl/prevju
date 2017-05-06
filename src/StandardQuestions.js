@@ -5,7 +5,7 @@ module.exports.Question1 = function(){
 }
 
 module.exports.Question2 = function(){
-  return "Do you have swag?"
+  return "Nice, what inspires you?"
 }
 
 module.exports.Question3 = function(){

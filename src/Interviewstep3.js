@@ -8,14 +8,12 @@ class Interviewstep2 extends Component {
   constructor(props){
     super(props);
     this.state = {
-      clicked: false,
-      questionNumber: 1
+      clicked: false
     }
     this.question1 = this.question1.bind(this)
     this.question2 = this.question2.bind(this)
     this.question3 = this.question3.bind(this)
     this.onClickMic = this.onClickMic.bind(this)
-    this.toggleQuestion = this.toggleQuestion.bind(this)
   }
 
   componentWillMount(){
@@ -30,32 +28,6 @@ class Interviewstep2 extends Component {
     this.question1();
   }
 
-  getQuestion(){
-    if(this.state.questionNumber == 1){
-      return <p>{StandardQuestions.Question1()}</p>
-    } else if(this.state.questionNumber == 2) {
-      return <p>{StandardQuestions.Question2()}</p>
-    } else if(this.state.questionNumber == 3){
-      return <p>{StandardQuestions.Question3()}</p>
-    }
-  }
-
-  toggleQuestion(){
-    console.log("here")
-    var number;
-    if(this.state.questionNumber == 1){
-      number = 2;
-      this.question2();
-    } else if(this.state.questionNumber == 2) {
-      number = 3
-      this.question3();
-    } else if(this.state.questionNumber == 3){
-      //next view
-    }
-    this.setState({
-      questionNumber: number
-    })
-  }
   getMicButton(){
     if(this.state.clicked){
       return <a onClick = {this.onClickMic} className="row mic-active interview-container"></a>
@@ -78,14 +50,6 @@ class Interviewstep2 extends Component {
     console.log(this.state.clicked)
   }
 
-  getButton(){
-    if(this.state.questionNumber == 3){
-      return <Link to='/interviewstep3' className="page-scroll btn btn-xl">Submit</Link>
-    } else {
-      return <a onClick = {this.toggleQuestion} className="page-scroll btn btn-xl">Next Question</a>
-    }
-  }
-
   render() {
     return (
 
@@ -100,9 +64,13 @@ class Interviewstep2 extends Component {
           <h1>Question 1</h1>
           </div>
 
+
+
+
+
           <div className="row center">
             <div className="">
-              {this.getQuestion()}
+              <p>{StandardQuestions.Question1()}</p>
             </div>
 
             {this.getMicButton()}
@@ -110,8 +78,10 @@ class Interviewstep2 extends Component {
 
           </div>
           <div className="col">
-          {this.getButton()}
+          <a href="#services" className="page-scroll btn btn-xl">Next Question</a>
           </div>
+
+
 
       </div>
 
