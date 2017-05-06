@@ -2,13 +2,15 @@ import React, { Component } from 'react'
 import { Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink } from 'react-router'
 import Landing from './Landing.js';
 import './App.css';
+import Interviewstep1 from './Interviewstep1.js'
+
 class App extends Component {
   render () {
     return (
       <Router history={hashHistory}>
         <Route path='/' component={Container}>
           <IndexRoute component={Landing} />
-          <Route path='/address' component={Address}>
+          <Route path='/interviewstep1' component={Interviewstep1}>
             <IndexRoute component={TwitterFeed} />
             <Route path='instagram' component={Instagram} />
             <Route path='query' component={Query} />
@@ -47,7 +49,7 @@ const Nav = () => (
   <div className="App-header">
     <IndexLink activeClassName='active' to='/'>prevju</IndexLink>&nbsp;
     <div className="menu">
-    <IndexLink activeClassName='active' to='/address'>titel1</IndexLink>&nbsp;
+    <IndexLink activeClassName='active' to='/interviewstep1'>titel1</IndexLink>&nbsp;
     <IndexLink activeClassName='active' to='/about'>titel2</IndexLink>&nbsp;
     {/* <IndexLink activeClassName='active' to='/namedComponent'>Named Components</IndexLink>&nbsp;
     <IndexLink activeClassName='active' to={{ pathname: '/address/query', query: { message: 'Hello from Route Query' } }}>Route Query</IndexLink> */}
