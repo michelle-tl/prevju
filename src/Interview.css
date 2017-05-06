@@ -6,7 +6,7 @@ h2{
   background-image: url("../img/wanttohire.png");
   margin: 0 auto;
 
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-position-x:40%;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@ h2{
   background-image: url("../img/create.png");
   margin: 0 auto;
 
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-position-x:40%;
   background-repeat: no-repeat;
